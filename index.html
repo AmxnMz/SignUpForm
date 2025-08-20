@@ -7,6 +7,60 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="background-container">
+        <img src="odin-lined.png" alt="wasup" id="odinLogo">
+        <h1 id="odinfont">ODIN</h1>
+        <p id="photoCreds">photo by Hallie West on unsplash</p>
+        <span class="transparent-bg"></span>
+        <img src="backgroundPic.jpg" alt="Hello" id="leafBg">
+    </div>
+    <div class="text">
+        <h3>This is not a real online service! You know you need something like this in your life 
+            to help you realize your deepest dreams
+            Sign Up to get started.
+        </h3>
+    </div>
+    <div class="formContainer">
+        <form action="index.php">
+            <h3>Let's do this!</h3>
+
+            <div class="formLine">
+                <div class="formField">
+                    <label for="firstName">FIRST NAME</label>
+                    <input type="text" placeholder="Spongebob" id="firstName">
+                </div>
+
+                <div class="formField">
+                    <label for="lastName">LAST NAME</label>
+                    <input type="text" placeholder="SquarePants" id="lastName">
+                </div>
+            </div>
+            <div class="formLine">
+                <div class="formField">
+                    <label for="email">EMAIL</label>
+                    <input type="email" placeholder="SpongeSquare@gmail.com" id="email">
+                </div>
+
+                <div class="formField">
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="phone" id="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                </div>
+            </div>
+
+            <div class="formLine">
+                <div class="formField">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password" minlength="6" maxlength="10" required>
+                </div>
+
+                <div class="formField">
+                    <label for="confirmPassword">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirmPassword" minlength="6" maxlength="10" required>
+                </div>
+            </div>
+
+        </form>
+    </div>
+    <button id="submitBtn">Create Account</button>
 </body>
 </html>
